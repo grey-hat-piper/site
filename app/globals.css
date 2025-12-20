@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --bg-hero: url("/assets/img/hero/bg.jpg");
+  --background-image-hero: url("/assets/img/hero/bg.jpg");
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
