@@ -12,8 +12,8 @@ const Hero = () => {
           <h1 className='h1 text-white mb-4'>
             <span className='text-accent'>Building</span> robust lasting solutions
           </h1>
-          <p className='mb-9'>Expert In Building Construction  |  Civil Works  |  Electrical Works and Supplies
-             |  Plumbing  |  Bricks and Blocks
+          <p className='mb-9'>Expert In Building Construction  |  Civil Works  |  Electrical Works  |  Supplies
+             |  Plumbing  |  Bricks and Blocks  |  Facility Management
           </p>
           {/* btn */}
           <div>
