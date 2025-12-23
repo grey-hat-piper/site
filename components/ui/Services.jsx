@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "./tabs";
 import Image from "next/image";
-import Button from "./Button";
 import {
   PiWallFill,
   PiPaintRollerFill,
@@ -10,6 +9,15 @@ import {
   PiUserGearFill,
 } from "react-icons/pi";
 import Pretitle from "./Pretitle";
+
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import Socials from "./Socials";
+import React from "react";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const serviceData =[
   {
@@ -160,7 +168,31 @@ const Services = () => {
                         })}
                       </ul>
                       {/* btn */}
-                      <Button text="Read more" />
+                      <Popover>
+                        <PopoverTrigger>
+                            <div className='ml-0 cursor-pointer w-[210px] h-[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w-[200px] group bg-accent'>
+                              <div className='flex-1 text-center tracking-[1.2px] font-primary font-bold text-primary text-sm uppercase'>
+                                EXPLORE MORE
+                              </div>
+                              <div className="w-11 h-11 bg-primary flex items-center justify-center">
+                                <RiArrowRightUpLine className='text-white text-xl group-hover:rotate-45 transition-all duration-200'/>
+                              </div>
+                            </div>
+                        </PopoverTrigger>
+
+                        <PopoverContent
+                          side="right"
+                          align="end"
+                          sideOffset={7}
+                          className="bg-primary md:w-auto w-[125px] z-9"
+                        >
+                          <Socials
+                            containerStyles="justify-center items-center gap-8 mx-auto xl:mx-0 text-xl h-[54px] flex"
+                            iconStyles="text-accent"
+                          />
+                        </PopoverContent>
+                      </Popover>
+
                     </div>
                   </div> 
 
