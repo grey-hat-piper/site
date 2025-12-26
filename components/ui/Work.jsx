@@ -6,30 +6,30 @@ import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
 
 const workData = [
   {
-    img: "/assets/img/work/restoration.jpg",
-    name: "restoration",
-    description: "Description goes here",
+    img: "/assets/img/work/construction.jpg",
+    name: "construction",
+    description: "Watch more here",
     href: "",
   },
 
   {
-    img: "/assets/img/work/restoration.jpg",
-    name: "restoration",
-    description: "Description goes here",
+    img: "/assets/img/work/renovation.jpg",
+    name: "renovation",
+    description: "Watch more here",
     href: "",
   },
 
   {
-    img: "/assets/img/work/restoration.jpg",
-    name: "restoration",
-    description: "Description goes here",
+    img: "/assets/img/work/security.jpg",
+    name: "security",
+    description: "Watch more here",
     href: "",
   },
 
   {
-    img: "/assets/img/work/restoration.jpg",
-    name: "restoration",
-    description: "Description goes here",
+    img: "/assets/img/work/utility.jpg",
+    name: "utility",
+    description: "Watch more here",
     href: "",
   },
 
@@ -43,7 +43,7 @@ const Work = () => {
           <Pretitle text="Our Work" center />
           <h2 className="h2 mb-3" >Discover Our Projects</h2>
           <p className="mb-11 max-w-[480px] mx-auto">
-            Providing export services designed to deliver quality and innovation in every
+            Providing expert services designed to deliver quality and innovation in every
             project we undertake.
           </p>
         </div>
